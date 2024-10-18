@@ -72,5 +72,60 @@ let respecConfig = {
   github: "https://github.com/Geonovum/hr-3d-standaarden",
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
- 
+  localBiblio: 
+  {
+    "3DTILES":
+      {
+        title:      "3D Tiles Specification 1.1",
+        href:       "https://docs.ogc.org/cs/22-025r4/22-025r4.html",
+        status:     "Approved",
+        publisher:  "Open Geospatial Consortium (OGC)",
+        editors:    ["Patrick Cozzi", "Sean Lilley"],
+        date:       "2023-01-12",
+    },    
+    "I3S":
+      {
+        title:      "OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.3",
+        href:       "https://docs.ogc.org/cs/17-014r9/17-014r9.html",
+        status:     "Approved",
+        publisher:  "Open Geospatial Consortium (OGC)",
+        editors:    ["Carl Reed", "Tamrat Belayneh"],
+        date:       "2023-01-11",
+    },
+    "CityGML3": 
+      {
+        title:    "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0",
+        href:     "https://docs.ogc.org/is/20-010/20-010.html",
+        status:   "Approved",
+        publisher:"Open Geospatial Consortium",
+        editors:  ["Thomas H. Kolbe", "Tatjana Kutzner", "Carl Stephen Smyth", "Claus Nagel", "Carsten Roensdorf", "Charles Heazel"],
+        date:     "2021-09-13",
+    },
+    "CityJSON": 
+      {
+        title:    "CityJSON Community Standard 2.0",
+        href:     "https://docs.ogc.org/cs/20-072r5/20-072r5.html",
+        status:   "Approved",
+        publisher:"Open Geospatial Consortium",
+        editors:  ["Hugo Ledoux"],
+        date:     "2023-10-20",
+    }, 
+    "3DGeoVolumes":
+    {      
+      title:    "OGC API - 3D GeoVolumes",
+      href:     "https://docs.ogc.org/DRAFTS/22-029.html",
+      status:   "Draft",
+      publisher:"Open Geospatial Consortium",
+      editors:  ["Jeff Harrison", "Ignacio Correas", "Jerome Jacovella-St-Louis"],
+      date:     "2022",
+    }, 
+    "glTF":
+    {      
+      title:    "glTF 2.0 Specification",
+      href:     "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
+      status:   "Published",
+      publisher:"Khronos Group",
+      date:     "2021-10-11",
+    }, 
+  }
 };
