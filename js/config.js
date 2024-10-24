@@ -126,6 +126,15 @@ let respecConfig = {
       status:   "Published",
       publisher:"Khronos Group",
       date:     "2021-10-11",
-    }, 
+    },
+    "Inventarisatie puntenwolken in Nederland":
+    {      
+      title:    "WP1: Inventarisatie van puntenwolken in Nederland",
+      href:     "nog niet beschikbaar",
+      status:   "In review",
+      publisher:"Rijkswaterstaat, Het Waterschapshuis, Kadaster & TU Delft",
+      editors:  ["D. van der Heide", "A. van Natijne", "I. Alkemade", "D. Hulskemper"],
+      date:     "2024",
+    }	  
   }
 };
