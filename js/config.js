@@ -101,6 +101,15 @@ let respecConfig = {
         editors:  ["Thomas H. Kolbe", "Tatjana Kutzner", "Carl Stephen Smyth", "Claus Nagel", "Carsten Roensdorf", "Charles Heazel"],
         date:     "2021-09-13",
     },
+    "CityGML3-part2": 
+      {
+        title:    "OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard",
+        href:     "https://docs.ogc.org/is/21-006r2/21-006r2.html",
+        status:   "Approved",
+        publisher:"Open Geospatial Consortium",
+        editors:  ["Tatjana Kutzner",  "Carl Stephen Smyth", "Claus Nagel","Volker Coors", "Diego Vinasco-Alvarez", "Nobuhiro Ishimaru", "Zhihang Yao", "Charles Heazel","Thomas H. Kolbe"],
+        date:     "2023-06-20",
+    },
     "CityJSON": 
       {
         title:    "CityJSON Community Standard 2.0",
