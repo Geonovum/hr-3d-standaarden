@@ -83,7 +83,6 @@ let respecConfig = {
         editors:    ["Patrick Cozzi", "Sean Lilley"],
         date:       "2023-01-12",
     },
-    {
     "OGC 3DTILES":
       {
         title:      "3D Tiles OGC landing page",
@@ -92,7 +91,6 @@ let respecConfig = {
         publisher:  "Open Geospatial Consortium (OGC)",
         date:       "2024",
     },
-    {
     "Handreiking 3D Tiling":
       {
         title:      "Handreiking 3D Tiling",
@@ -102,7 +100,6 @@ let respecConfig = {
         editors:    ["Arnoud de Boer", "Michel Grothe"],
         date:       "2024-07-05",
     },
-    {
     "OGC API - Tiles":
       {
         title:      "OGC API - Tiles",
