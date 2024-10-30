@@ -139,8 +139,8 @@ let respecConfig = {
         title:      "I3S in CesiumJS",
         href:       "https://www.esri.com/arcgis-blog/products/developers/3d-gis/ogc-i3s-cesiumjs/?srsltid=AfmBOoodzV1B6R25DaY9BTw5PdcnTQxqHZOJ8m58JvT2MTL7L4TbuBwI/",
         status:     "Approved",
-        publisher:  "ESRI",,
-        editors:    ["Tamrat Belayneh"]
+        publisher:  "ESRI",
+        editors:    ["Tamrat Belayneh"],
         date:       "2022-11-08",
     },
     "CityGML3": 
