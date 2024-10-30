@@ -82,7 +82,36 @@ let respecConfig = {
         publisher:  "Open Geospatial Consortium (OGC)",
         editors:    ["Patrick Cozzi", "Sean Lilley"],
         date:       "2023-01-12",
-    },    
+    },
+    {
+    "OGC 3DTILES":
+      {
+        title:      "3D Tiles OGC landing page",
+        href:       "https://www.ogc.org/publications/standard/3dtiles/",
+        status:     "Approved",
+        publisher:  "Open Geospatial Consortium (OGC)",
+        date:       "2024",
+    },
+    {
+    "Handreiking 3D Tiling":
+      {
+        title:      "Handreiking 3D Tiling",
+        href:       "https://geonovum.github.io/3d-tiling/",
+        status:     "Workversion",
+        publisher:  "Geonovum",
+        editors:    ["Arnoud de Boer", "Michel Grothe"],
+        date:       "2024-07-05",
+    },
+    {
+    "OGC API - Tiles":
+      {
+        title:      "OGC API - Tiles",
+        href:       "https://docs.ogc.org/is/20-057/20-057.html",
+        status:     "Approved",
+        publisher:  "Open Geospatial Consortium (OGC)",
+        editors:    ["Joan Masó", "Jérôme Jacovella-St-Louis"],
+        date:       "2022-11-10",
+    }, 
     "I3S":
       {
         title:      "OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.3",
@@ -91,6 +120,31 @@ let respecConfig = {
         publisher:  "Open Geospatial Consortium (OGC)",
         editors:    ["Carl Reed", "Tamrat Belayneh"],
         date:       "2023-01-11",
+    },  
+    "I3S specification":
+      {
+        title:      "Scene Layers: Service and Package Standard",
+        href:       "https://github.com/Esri/i3s-spec",
+        status:     "Approved",
+        publisher:  "ESRI",
+        date:       "2023",
+    }, 
+    "I3S landing page OGC":
+      {
+        title:      "I3S landing page OGC",
+        href:       "https://www.ogc.org/publications/standard/i3s/",
+        status:     "Approved",
+        publisher:  "Open Geospatial Consortium (OGC)",
+        date:       "2024",
+    }, 
+    "I3S in CesiumJS":
+      {
+        title:      "I3S in CesiumJS",
+        href:       "https://www.esri.com/arcgis-blog/products/developers/3d-gis/ogc-i3s-cesiumjs/?srsltid=AfmBOoodzV1B6R25DaY9BTw5PdcnTQxqHZOJ8m58JvT2MTL7L4TbuBwI/",
+        status:     "Approved",
+        publisher:  "ESRI",,
+        editors:    ["Tamrat Belayneh"]
+        date:       "2022-11-08",
     },
     "CityGML3": 
       {
@@ -119,6 +173,23 @@ let respecConfig = {
         editors:  ["Hugo Ledoux"],
         date:     "2023-10-20",
     }, 
+    "CityJSON Implementation": 
+      {
+        title:    "CityJSON: CityGML v3.0 implementation details",
+        href:     "https://www.cityjson.org/citygml/v30/#specific-citygml-v30-features-not-supported",
+        status:   "Approved",
+        publisher:"Open Geospatial Consortium",
+        date:     "2024",
+    },  
+    "CityJSON Specifications": 
+      {
+        title:    "CityJSON Specifications 2.0.1",
+        href:     "https://www.cityjson.org/specs/2.0.1/",
+        status:   "Approved",
+        publisher:"Open Geospatial Consortium",
+        editors:  ["Hugo Ledoux", "Balázs Dukai"],
+        date:     "2024-04-11",
+    }, 
     "3DGeoVolumes":
     {      
       title:    "OGC API - 3D GeoVolumes",
@@ -128,6 +199,38 @@ let respecConfig = {
       editors:  ["Jeff Harrison", "Ignacio Correas", "Jerome Jacovella-St-Louis"],
       date:     "2022",
     }, 
+    "buildingSMART":
+    {      
+      title:    "buildingSMART",
+      href:     "https://technical.buildingsmart.org/standards/ifc",
+      status:   "Approved",
+      publisher:"buildingSMART",
+      date:     "2024",
+    },   
+    "ISO 16739":
+    {      
+      title:    "ISO 16739",
+      href:     "https://www.iso.org/standard/84123.html",
+      status:   "Approved",
+      publisher:"ISO",
+      date:     "2024-03",
+    },     
+    "IFC4.3":
+    {      
+      title:    "IFC4.3",
+      href:     "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/index.html",
+      status:   "Approved",
+      publisher:"buildingSMART",
+      date:     "2024",
+    },    
+    "GeoBIM benchmark":
+    {      
+      title:    "GeoBIM benchmark",
+      href:     "https://3d.bk.tudelft.nl/projects/geobim-benchmark/task1.html",
+      status:   "Approved",
+      publisher:"ISPRS, EuroSDR, Tu Delft 3Dgeoinfo, Lund University, National University of Singapore, National Technical University of Athens",
+      date:     "2019",
+    }, 
     "glTF":
     {      
       title:    "glTF 2.0 Specification",
@@ -135,6 +238,27 @@ let respecConfig = {
       status:   "Published",
       publisher:"Khronos Group",
       date:     "2021-10-11",
+    }, 
+    "LAS":
+    {      
+      title:    "LAS Specification",
+      href:     "https://www.ogc.org/publications/standard/las/",
+      status:   "Published",
+      publisher:"Open Geospatial Consortium",
+      date:     "2017",
+    }, 
+    "LAS Specification 1.4":
+    {      
+      title:    "LAS Specification 1.4",
+      href:     "https://portal.ogc.org/files/?artifact_id=74523",
+      status:   "Approved",
+      publisher:"Open Geospatial Consortium",
+      date:     "2013-07-15",
+    }, 
+    "Geoforum":
+    {      
+      title:    "Geoforum",
+      href:     "https://geoforum.nl/",
     },
     "Inventarisatie puntenwolken in Nederland":
     {      
