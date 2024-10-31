@@ -74,7 +74,7 @@ let respecConfig = {
   // TODO: Change the filename as preferred.
   localBiblio: 
   {
-    "3DTILES":
+    "3D Tiles":
       {
         title:      "3D Tiles Specification 1.1",
         href:       "https://docs.ogc.org/cs/22-025r4/22-025r4.html",
@@ -83,7 +83,7 @@ let respecConfig = {
         editors:    ["Patrick Cozzi", "Sean Lilley"],
         date:       "2023-01-12",
     },
-    "OGC 3DTILES":
+    "OGC 3D Tiles":
       {
         title:      "3D Tiles OGC landing page",
         href:       "https://www.ogc.org/publications/standard/3dtiles/",
