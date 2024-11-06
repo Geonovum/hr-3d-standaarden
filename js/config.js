@@ -21,7 +21,7 @@ let respecConfig = {
   //specType: "BP",                 // Best Practice
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   //-- zie: https://geonovum.github.io/handleiding-tooling/ReSpec/#pubdomain
-  pubDomain: "TODO",
+  pubDomain: "3d",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
   //license: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
   //license: "cc0",                 // Public Domain Dedication
@@ -34,13 +34,13 @@ let respecConfig = {
 
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2023-03-28",
+  //publishDate: "2024-11-06",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  //previousPublishDate: "2014-05-01",
-  //previousMaturity: "CV",
+  previousPublishDate: "2014-11-06",
+  previousMaturity: "CV",
   //-- TODO: de namen van de Editor(s) / Redacteur(en)---------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors:
@@ -74,7 +74,7 @@ let respecConfig = {
   // TODO: Change the filename as preferred.
   localBiblio: 
   {
-    "3D Tiles":
+    "3DTiles":
       {
         title:      "3D Tiles Specification 1.1",
         href:       "https://docs.ogc.org/cs/22-025r4/22-025r4.html",
@@ -83,7 +83,7 @@ let respecConfig = {
         editors:    ["Patrick Cozzi", "Sean Lilley"],
         date:       "2023-01-12",
     },
-    "OGC 3D Tiles":
+    "OGC3DTiles":
       {
         title:      "3D Tiles OGC landing page",
         href:       "https://www.ogc.org/publications/standard/3dtiles/",
@@ -91,7 +91,7 @@ let respecConfig = {
         publisher:  "Open Geospatial Consortium (OGC)",
         date:       "2024",
     },
-    "Handreiking 3D Tiling":
+    "Handreiking3DTiling":
       {
         title:      "Handreiking 3D Tiling",
         href:       "https://geonovum.github.io/3d-tiling/",
@@ -100,7 +100,7 @@ let respecConfig = {
         editors:    ["Arnoud de Boer", "Michel Grothe"],
         date:       "2024-07-05",
     },
-    "OGC API - Tiles":
+    "OGCAPITiles":
       {
         title:      "OGC API - Tiles",
         href:       "https://docs.ogc.org/is/20-057/20-057.html",
@@ -118,7 +118,7 @@ let respecConfig = {
         editors:    ["Carl Reed", "Tamrat Belayneh"],
         date:       "2023-01-11",
     },  
-    "I3S specification":
+    "I3Sspecification":
       {
         title:      "Scene Layers: Service and Package Standard",
         href:       "https://github.com/Esri/i3s-spec",
@@ -126,7 +126,7 @@ let respecConfig = {
         publisher:  "ESRI",
         date:       "2023",
     }, 
-    "I3S landing page OGC":
+    "I3SlandingpageOGC":
       {
         title:      "I3S landing page OGC",
         href:       "https://www.ogc.org/publications/standard/i3s/",
@@ -134,7 +134,7 @@ let respecConfig = {
         publisher:  "Open Geospatial Consortium (OGC)",
         date:       "2024",
     }, 
-    "I3S in CesiumJS":
+    "I3SCesiumJS":
       {
         title:      "I3S in CesiumJS",
         href:       "https://www.esri.com/arcgis-blog/products/developers/3d-gis/ogc-i3s-cesiumjs/?srsltid=AfmBOoodzV1B6R25DaY9BTw5PdcnTQxqHZOJ8m58JvT2MTL7L4TbuBwI/",
@@ -170,7 +170,7 @@ let respecConfig = {
         editors:  ["Hugo Ledoux"],
         date:     "2023-10-20",
     }, 
-    "CityJSON Implementation": 
+    "CityJSONImplementation": 
       {
         title:    "CityJSON: CityGML v3.0 implementation details",
         href:     "https://www.cityjson.org/citygml/v30/#specific-citygml-v30-features-not-supported",
@@ -178,7 +178,7 @@ let respecConfig = {
         publisher:"Open Geospatial Consortium",
         date:     "2024",
     },  
-    "CityJSON Specifications": 
+    "CityJSONSpecifications": 
       {
         title:    "CityJSON Specifications 2.0.1",
         href:     "https://www.cityjson.org/specs/2.0.1/",
@@ -204,7 +204,7 @@ let respecConfig = {
       publisher:"buildingSMART",
       date:     "2024",
     },   
-    "ISO 16739":
+    "ISO16739":
     {      
       title:    "ISO 16739",
       href:     "https://www.iso.org/standard/84123.html",
@@ -220,7 +220,7 @@ let respecConfig = {
       publisher:"buildingSMART",
       date:     "2024",
     },    
-    "GeoBIM benchmark":
+    "GeoBIMbenchmark":
     {      
       title:    "GeoBIM benchmark",
       href:     "https://3d.bk.tudelft.nl/projects/geobim-benchmark/task1.html",
@@ -244,7 +244,7 @@ let respecConfig = {
       publisher:"Open Geospatial Consortium",
       date:     "2017",
     }, 
-    "LAS Specification 1.4":
+    "LASSpecification1.4":
     {      
       title:    "LAS Specification 1.4",
       href:     "https://portal.ogc.org/files/?artifact_id=74523",
@@ -257,7 +257,7 @@ let respecConfig = {
       title:    "Geoforum",
       href:     "https://geoforum.nl/",
     },
-    "Inventarisatie puntenwolken in Nederland":
+    "WP1":
     {      
       title:    "WP1: Inventarisatie van puntenwolken in Nederland",
       href:     "nog niet beschikbaar",

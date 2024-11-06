@@ -1,0 +1,970 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta name="generator" content="ReSpec 35.1.1">
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;border-bottom-color:var(--indextable-hover-bg,#fff);top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1;border-bottom-color:var(--indextable-hover-bg,#a2a9b1)}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;color:var(--text,#000);margin-top:.25em}
+.dfn-panel ul a[href]{color:#333;color:var(--text,#333)}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+  
+  
+  
+  
+  
+  
+  
+<script>document.title = respecConfig.title</script>
+<title>Wegwijzer 3D standaarden</title>
+  
+<title>TODO: Vul hier de titel in</title>
+  
+<link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico">
+  
+  
+  
+<style>
+div.imageinfo img {max-width: none;}
+</style>
+
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline;position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-.7em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+<style id="respec-nlgov">
+img.license{float:left;padding-right:5px}
+</style>
+<meta name="description" content="Voor de verdere ontwikkeling van 3D-technologieën zijn standaarden voor het beheren, modelleren en delen van 3D-data onmisbaar. Ze vormen een betrouwbaar kader voor bedrijven om in te investeren en het stimuleren van hergebruik van 3D-informatie. Dit bevordert de interoperabiliteit tussen systemen en maakt een brede toepassing van 3D-informatie mogelijk in domeinen zoals stadsplanning, infrastructuurbeheer en andere ruimtelijke vraagstukken.">
+<style>
+
+  .sidelabel {
+    position: fixed;
+    -webkit-transform-origin: top right;
+    right: 100%;
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+    padding: 4px 50px 4px 10px;
+    color: white;
+    white-space: nowrap;
+    z-index: 1;
+    background-color: #045D9F;
+  }
+</style>
+<script type="text/javascript">
+   /* Any custom mermaid.js scripts will go here. */
+  </script>
+<style>
+
+  /* Any custom mermaid.js scripts will go here. */
+  }
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "nl_organisationName": "Geonovum",
+  "nl_organisationPublishURL": "https://docs.geostandaarden.nl/",
+  "logos": [
+    {
+      "src": "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
+      "alt": "Geonovum",
+      "id": "Geonovum",
+      "height": 67,
+      "width": 132,
+      "url": "https://www.geonovum.nl/geo-standaarden"
+    }
+  ],
+  "postProcess": [
+    null
+  ],
+  "latestVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "shortName",
+    "/"
+  ],
+  "thisVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "specStatus",
+    "-",
+    "specType",
+    "-",
+    "shortName",
+    "-",
+    "publishDate"
+  ],
+  "prevVersion": [
+    "nl_organisationPublishURL",
+    "pubDomain",
+    "/",
+    "previousMaturity",
+    "-",
+    "specType",
+    "-",
+    "shortName",
+    "-",
+    "previousPublishDate"
+  ],
+  "useLogo": true,
+  "useLabel": true,
+  "license": "cc-by",
+  "addSectionLinks": true,
+  "localizationStrings": {
+    "en": {
+      "wv": "Editor's draft",
+      "cv": "Candidate recommendation",
+      "vv": "Proposed recommendation",
+      "def": "Recommendation",
+      "ld": "Living document",
+      "basis": "Document",
+      "no": "Norm",
+      "st": "Standard",
+      "im": "Information model",
+      "pr": "Practical guideline",
+      "hr": "Guide",
+      "wa": "Work process agreement",
+      "al": "General",
+      "bd": "Governance documentation",
+      "bp": "Best practice"
+    },
+    "nl": {
+      "wv": "Werkversie",
+      "cv": "Consultatieversie",
+      "vv": "Versie ter vaststelling",
+      "def": "Vastgestelde versie",
+      "ld": "Levend document",
+      "basis": "Document",
+      "no": "Norm",
+      "st": "Standaard",
+      "im": "Informatiemodel",
+      "pr": "Praktijkrichtlijn",
+      "hr": "Handreiking",
+      "wa": "Werkafspraak",
+      "al": "Algemeen",
+      "bd": "Beheerdocumentatie",
+      "bp": "Best practice"
+    }
+  },
+  "sotdText": {
+    "nl": {
+      "sotd": "Status van dit document",
+      "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
+      "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "basis": "Dit is een document zonder officiële status.",
+      "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
+    },
+    "en": {
+      "sotd": "Status of this document",
+      "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
+      "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
+      "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
+      "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
+      "basis": "This document has no official standing.",
+      "ld": "This is a living document, which is updated regularly."
+    }
+  },
+  "labelColor": {
+    "def": "#045D9F",
+    "wv": "#FF0000",
+    "cv": "#045D9F",
+    "vv": "#045D9F",
+    "basis": "#80CC28",
+    "ld": "#80CC28"
+  },
+  "licenses": {
+    "cc0": {
+      "name": "Creative Commons 0 Public Domain Dedication",
+      "short": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/CC-Licentie.svg"
+    },
+    "cc-by": {
+      "name": "Creative Commons Attribution 4.0 International Public License",
+      "short": "CC-BY",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg"
+    },
+    "cc-by-nd": {
+      "name": "Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal",
+      "short": "CC-BY-ND",
+      "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/cc-by-nd.svg"
+    }
+  },
+  "localBiblio": {
+    "3DTiles": {
+      "title": "3D Tiles Specification 1.1",
+      "href": "https://docs.ogc.org/cs/22-025r4/22-025r4.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Patrick Cozzi",
+        "Sean Lilley"
+      ],
+      "date": "2023-01-12",
+      "id": "3dtiles"
+    },
+    "OGC3DTiles": {
+      "title": "3D Tiles OGC landing page",
+      "href": "https://www.ogc.org/publications/standard/3dtiles/",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2024",
+      "id": "ogc3dtiles"
+    },
+    "Handreiking3DTiling": {
+      "title": "Handreiking 3D Tiling",
+      "href": "https://geonovum.github.io/3d-tiling/",
+      "status": "Workversion",
+      "publisher": "Geonovum",
+      "editors": [
+        "Arnoud de Boer",
+        "Michel Grothe"
+      ],
+      "date": "2024-07-05",
+      "id": "handreiking3dtiling"
+    },
+    "OGCAPITiles": {
+      "title": "OGC API - Tiles",
+      "href": "https://docs.ogc.org/is/20-057/20-057.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Joan Masó",
+        "Jérôme Jacovella-St-Louis"
+      ],
+      "date": "2022-11-10",
+      "id": "ogcapitiles"
+    },
+    "I3S": {
+      "title": "OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.3",
+      "href": "https://docs.ogc.org/cs/17-014r9/17-014r9.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Carl Reed",
+        "Tamrat Belayneh"
+      ],
+      "date": "2023-01-11",
+      "id": "i3s"
+    },
+    "I3Sspecification": {
+      "title": "Scene Layers: Service and Package Standard",
+      "href": "https://github.com/Esri/i3s-spec",
+      "status": "Approved",
+      "publisher": "ESRI",
+      "date": "2023",
+      "id": "i3sspecification"
+    },
+    "I3SlandingpageOGC": {
+      "title": "I3S landing page OGC",
+      "href": "https://www.ogc.org/publications/standard/i3s/",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2024",
+      "id": "i3slandingpageogc"
+    },
+    "I3SCesiumJS": {
+      "title": "I3S in CesiumJS",
+      "href": "https://www.esri.com/arcgis-blog/products/developers/3d-gis/ogc-i3s-cesiumjs/?srsltid=AfmBOoodzV1B6R25DaY9BTw5PdcnTQxqHZOJ8m58JvT2MTL7L4TbuBwI/",
+      "status": "Approved",
+      "publisher": "ESRI",
+      "editors": [
+        "Tamrat Belayneh"
+      ],
+      "date": "2022-11-08",
+      "id": "i3scesiumjs"
+    },
+    "CityGML3": {
+      "title": "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0",
+      "href": "https://docs.ogc.org/is/20-010/20-010.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Thomas H. Kolbe",
+        "Tatjana Kutzner",
+        "Carl Stephen Smyth",
+        "Claus Nagel",
+        "Carsten Roensdorf",
+        "Charles Heazel"
+      ],
+      "date": "2021-09-13",
+      "id": "citygml3"
+    },
+    "CityGML3-part2": {
+      "title": "OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard",
+      "href": "https://docs.ogc.org/is/21-006r2/21-006r2.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Tatjana Kutzner",
+        "Carl Stephen Smyth",
+        "Claus Nagel",
+        "Volker Coors",
+        "Diego Vinasco-Alvarez",
+        "Nobuhiro Ishimaru",
+        "Zhihang Yao",
+        "Charles Heazel",
+        "Thomas H. Kolbe"
+      ],
+      "date": "2023-06-20",
+      "id": "citygml3-part2"
+    },
+    "CityJSON": {
+      "title": "CityJSON Community Standard 2.0",
+      "href": "https://docs.ogc.org/cs/20-072r5/20-072r5.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Hugo Ledoux"
+      ],
+      "date": "2023-10-20",
+      "id": "cityjson"
+    },
+    "CityJSONImplementation": {
+      "title": "CityJSON: CityGML v3.0 implementation details",
+      "href": "https://www.cityjson.org/citygml/v30/#specific-citygml-v30-features-not-supported",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium",
+      "date": "2024",
+      "id": "cityjsonimplementation"
+    },
+    "CityJSONSpecifications": {
+      "title": "CityJSON Specifications 2.0.1",
+      "href": "https://www.cityjson.org/specs/2.0.1/",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Hugo Ledoux",
+        "Balázs Dukai"
+      ],
+      "date": "2024-04-11",
+      "id": "cityjsonspecifications"
+    },
+    "3DGeoVolumes": {
+      "title": "OGC API - 3D GeoVolumes",
+      "href": "https://docs.ogc.org/DRAFTS/22-029.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Jeff Harrison",
+        "Ignacio Correas",
+        "Jerome Jacovella-St-Louis"
+      ],
+      "date": "2022",
+      "id": "3dgeovolumes"
+    },
+    "buildingSMART": {
+      "title": "buildingSMART",
+      "href": "https://technical.buildingsmart.org/standards/ifc",
+      "status": "Approved",
+      "publisher": "buildingSMART",
+      "date": "2024",
+      "id": "buildingsmart"
+    },
+    "ISO16739": {
+      "title": "ISO 16739",
+      "href": "https://www.iso.org/standard/84123.html",
+      "status": "Approved",
+      "publisher": "ISO",
+      "date": "2024-03",
+      "id": "iso16739"
+    },
+    "IFC4.3": {
+      "title": "IFC4.3",
+      "href": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/index.html",
+      "status": "Approved",
+      "publisher": "buildingSMART",
+      "date": "2024",
+      "id": "ifc4.3"
+    },
+    "GeoBIMbenchmark": {
+      "title": "GeoBIM benchmark",
+      "href": "https://3d.bk.tudelft.nl/projects/geobim-benchmark/task1.html",
+      "status": "Approved",
+      "publisher": "ISPRS, EuroSDR, Tu Delft 3Dgeoinfo, Lund University, National University of Singapore, National Technical University of Athens",
+      "date": "2019",
+      "id": "geobimbenchmark"
+    },
+    "glTF": {
+      "title": "glTF 2.0 Specification",
+      "href": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
+      "status": "Published",
+      "publisher": "Khronos Group",
+      "date": "2021-10-11",
+      "id": "gltf"
+    },
+    "LAS": {
+      "title": "LAS Specification",
+      "href": "https://www.ogc.org/publications/standard/las/",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "date": "2017",
+      "id": "las"
+    },
+    "LASSpecification1.4": {
+      "title": "LAS Specification 1.4",
+      "href": "https://portal.ogc.org/files/?artifact_id=74523",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium",
+      "date": "2013-07-15",
+      "id": "lasspecification1.4"
+    },
+    "Geoforum": {
+      "title": "Geoforum",
+      "href": "https://geoforum.nl/",
+      "id": "geoforum"
+    },
+    "WP1": {
+      "title": "WP1: Inventarisatie van puntenwolken in Nederland",
+      "href": "nog niet beschikbaar",
+      "status": "In review",
+      "publisher": "Rijkswaterstaat, Het Waterschapshuis, Kadaster & TU Delft",
+      "editors": [
+        "D. van der Heide",
+        "A. van Natijne",
+        "I. Alkemade",
+        "D. Hulskemper"
+      ],
+      "date": "2024",
+      "id": "wp1"
+    }
+  },
+  "title": "Wegwijzer 3D standaarden",
+  "specStatus": "cv",
+  "specType": "HR",
+  "pubDomain": "3d",
+  "shortName": "hr-3d-standaarden",
+  "publishDate": "2024-11-06",
+  "editors": [
+    {
+      "name": "Yneke van Iersel",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Yneke van Iersel",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Linda van den Brink",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    }
+  ],
+  "github": "https://github.com/Geonovum/hr-3d-standaarden"
+}</script>
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+
+<body class="h-entry informative"><div class="head">
+    <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
+  </a> <h1 id="title" class="title">Wegwijzer 3D standaarden</h1>
+    
+    <h2>
+      Geonovum Handreiking<br>
+      Consultatieversie
+      <time class="dt-published" datetime="2024-11-06">06 november 2024</time>
+    </h2>
+    <dl>
+      <dt>Deze versie:</dt><dd class="status">
+              <a class="u-url status" href="https://docs.geostandaarden.nl/3d/cv-hr-hr-3d-standaarden-20241106">https://docs.geostandaarden.nl/3d/cv-hr-hr-3d-standaarden-20241106</a>
+            </dd>
+      <dt>Laatst gepubliceerde versie:</dt><dd>
+              <a href="https://docs.geostandaarden.nl/3d/hr-3d-standaarden/">https://docs.geostandaarden.nl/3d/hr-3d-standaarden/</a>
+            </dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/hr-3d-standaarden/">https://geonovum.github.io/hr-3d-standaarden/</a></dd>
+      
+      
+      
+      
+      
+      <dt>Redacteur:</dt>
+      <dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Yneke van Iersel</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd>
+      
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Yneke van Iersel</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Linda van den Brink</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd>
+      <dt>Doe mee:</dt><dd>
+    <a href="https://github.com/Geonovum/hr-3d-standaarden/">GitHub Geonovum/hr-3d-standaarden</a>
+  </dd><dd>
+    <a href="https://github.com/Geonovum/hr-3d-standaarden/issues/">Dien een melding in</a>
+  </dd><dd>
+    <a href="https://github.com/Geonovum/hr-3d-standaarden/commits/">Revisiehistorie</a>
+  </dd><dd>
+    <a href="https://github.com/Geonovum/hr-3d-standaarden/pulls/">Pull requests</a>
+  </dd>
+    </dl>
+    
+    
+    
+    <p class="copyright">
+          Dit document valt onder de volgende licentie: 
+          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+        </p>
+    <hr title="Separator for header">
+  </div>
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Voor de verdere ontwikkeling van 3D-technologieën zijn standaarden voor het beheren, modelleren en delen van 3D-data onmisbaar. Ze vormen een betrouwbaar kader voor bedrijven om in te investeren en het stimuleren van hergebruik van 3D-informatie. Dit bevordert de interoperabiliteit tussen systemen en maakt een brede toepassing van 3D-informatie mogelijk in domeinen zoals stadsplanning, infrastructuurbeheer en andere ruimtelijke vraagstukken. </p>
+<p>Dit document is een wegwijzer over het uitwisselen van 3D data. Het geeft een overzicht van de verschillende bestandsformaten die je hiervoor kunt gebruiken, geeft handvatten voor het kiezen van het juiste formaat voor de juiste situatie, en geeft in afzonderlijke hoofdstukken gedetailleerde informatie over het uitwisselen van 3D data in CityJSON, CityGML, 3D Tiles, I3S, IFC en LAZ.</p>
+</section>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar </p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#x3d-formaten-keuzehulp"><bdi class="secno">1. </bdi>3D Formaten keuzehulp</a></li><li class="tocline"><a class="tocxref" href="#de-verschillende-3d-bestandsformaten"><bdi class="secno">2. </bdi>De verschillende 3D bestandsformaten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cityjson-en-citygml"><bdi class="secno">2.1 </bdi>CityJSON en CityGML</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wanneer-citygml-en-cityjson-gebruiken"><bdi class="secno">2.1.1 </bdi>Wanneer CityGML en CityJSON gebruiken?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tiles"><bdi class="secno">2.2 </bdi>3D tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wanneer-3d-tiles-gebruiken"><bdi class="secno">2.2.1 </bdi>Wanneer 3D tiles gebruiken?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#indexed-3d-scene-layer-i3s"><bdi class="secno">2.3 </bdi>Indexed 3D Scene Layer (I3S)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wanneer-i3s-gebruiken"><bdi class="secno">2.3.1 </bdi>Wanneer I3S gebruiken?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#industry-foundation-class-ifc"><bdi class="secno">2.4 </bdi>Industry Foundation Class (IFC)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wanneer-ifc-gebruiken"><bdi class="secno">2.4.1 </bdi>Wanneer IFC gebruiken?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#laz"><bdi class="secno">2.5 </bdi>LAZ</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wanneer-laz-gebruiken"><bdi class="secno">2.5.1 </bdi>Wanneer LAZ gebruiken?</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-geovolumes-api"><bdi class="secno">3. </bdi>3D GeoVolumes API</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wanneer-3d-geovolumes-gebruiken"><bdi class="secno">3.1 </bdi>Wanneer 3D GeoVolumes gebruiken?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">A.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+
+  
+  <section id="x3d-formaten-keuzehulp"><div class="header-wrapper"><h2 id="x1-3d-formaten-keuzehulp"><bdi class="secno">1. </bdi>3D Formaten keuzehulp</h2><a class="self-link" href="#x3d-formaten-keuzehulp" aria-label="Permalink for Section 1."></a></div>
+<img src="./media/3D-uitwisselformaten-keuzehulp-1nov.png" alt="Keuzehulp 3D standaarden" style="width:1100px;"></section>
+  <section id="de-verschillende-3d-bestandsformaten"><div class="header-wrapper"><h2 id="x2-de-verschillende-3d-bestandsformaten"><bdi class="secno">2. </bdi>De verschillende 3D bestandsformaten</h2><a class="self-link" href="#de-verschillende-3d-bestandsformaten" aria-label="Permalink for Section 2."></a></div>
+<section id="cityjson-en-citygml"><div class="header-wrapper"><h3 id="x2-1-cityjson-en-citygml"><bdi class="secno">2.1 </bdi>CityJSON en CityGML</h3><a class="self-link" href="#cityjson-en-citygml" aria-label="Permalink for Section 2.1"></a></div>
+<p>In de wereld van digitale 3D-modellen van steden zijn er verschillende standaarden ontwikkeld om de opslag en uitwisseling van deze gegevens te ondersteunen. Twee van de meest prominente standaarden zijn CityGML [<cite><a class="bibref" data-link-type="biblio" href="#bib-citygml3-part2" title="OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard">CityGML3-part2</a></cite>] en CityJSON [<cite><a class="bibref" data-link-type="biblio" href="#bib-cityjson" title="CityJSON Community Standard 2.0">CityJSON</a></cite>]. CityGML is al sinds 2008 een gevestigde standaard, ontwikkeld door het Open Geospatial Consortium (OGC), terwijl CityJSON een nieuwer en lichter alternatief biedt dat in 2020 door hetzelfde consortium werd erkend. Beide standaarden zijn gebaseerd op hetzelfde datamodel, dat in het CityGML conceptueel model [<cite><a class="bibref" data-link-type="biblio" href="#bib-citygml3" title="OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0">CityGML3</a></cite>] is vastgelegd. CityGML maakt gebruik van een op XML gebaseerde structuur, terwijl CityJSON de eenvoud en flexibiliteit van JSON benut. Hoewel ze hetzelfde doel nastreven, namelijk het modelleren van 3D-steden en landschappen, verschillen de formaten sterk in hun technische aanpak en gebruiksscenario’s. Een kernconcept binnen zowel CityGML als CityJSON, is het gebruik van niveaus van detail (Levels of Detail, LOD). Dit concept maakt het mogelijk om objecten op verschillende schaalniveaus te modelleren, variërend van eenvoudige 2.5D-terreinmodellen (LOD0) tot zeer gedetailleerde 3D-modellen inclusief interieurmodellen van gebouwen (LOD4). </p>
+<p>Het belangrijkste verschil tussen CityGML en CityJSON ligt in de manier waarop de gegevens worden geëncodeerd. CityGML gebruikt XML, een tekstgebaseerd formaat dat bekend staat om zijn robuustheid en flexibiliteit, maar dat vaak als zwaar en moeilijk te bewerken wordt beschouwd. CityJSON daarentegen is veel compacter en maakt gebruik van het JSON-formaat, dat veel eenvoudiger te verwerken is door programmeurs. Een ander belangrijk verschil is de bestandsgrootte. CityJSON-bestanden zijn aanzienlijk kleiner dan CityGML-bestanden; vaak wordt een CityGML-bestand door CityJSON met een factor 7 verkleind [<cite><a class="bibref" data-link-type="biblio" href="#bib-cityjson" title="CityJSON Community Standard 2.0">CityJSON</a></cite>]. Dit maakt CityJSON aantrekkelijker voor situaties waarin bandbreedte en opslagcapaciteit beperkte middelen zijn. Het nadeel van CityJSON is echter dat het sommige complexe topologische relaties, zoals die met water of terrein, niet volledig ondersteunt [<cite><a class="bibref" data-link-type="biblio" href="#bib-cityjsonimplementation" title="CityJSON: CityGML v3.0 implementation details">CityJSONImplementation</a></cite>]. </p>
+<p>CityJSON is een open standaard, beheerd door de gemeenschap, en heeft de status van "Community Standard" binnen het Open Geospatial Consortium (OGC). Dit betekent dat het breed ondersteund wordt door verschillende partijen en softwarepakketen (<a href="https://www.cityjson.org/software/">https://www.cityjson.org/software/</a>).  De standaard staat open voor continue verbetering door een brede gebruikersbasis. CityJSON is ontwikkeld met de gedachte om 3D-stadsmodellen toegankelijker te maken voor programmeurs. Het is een gebruiksvriendelijk formaat dat zich richt op eenvoud in het lezen, verwerken en creëren van datasets. CityJSON legt, net als CityGML, veel nadruk op semantiek, wat essentieel is voor toepassingen waar gedetailleerde beschrijvingen van stedelijke objecten nodig zijn. Het formaat is voornamelijk gericht op analyse in plaats van visualisatie en wordt gebruikt in statische toepassingen, zoals stedelijke planning en 3D-dataverwerking. Daarnaast ondersteunt het ook dynamische toepassingen door middel van CityJSON-Sequence, een uitbreiding die data streaming mogelijk maakt, waardoor grote datasets stapsgewijs kunnen worden verwerkt zonder de volledige dataset in één keer te hoeven laden, wat efficiëntie verhoogt bij real-time verwerking van stedelijke data</p>
+<p>Versie 2.0 van CityJSON, geadopteerd door het OGC, biedt ten opzichte van CityGML enkele extra functionaliteiten die specifiek zijn voor JSON. Hierdoor kunnen ontwikkelaars eenvoudig API’s en tools bouwen die compatibel zijn met CityJSON. De JSON-specifieke extensiemechanismen maken het mogelijk om de basisstructuur uit te breiden zonder de kern van de standaard te doorbreken. Meer details en specificaties over CityJSON zijn te vinden op de officiële website, zoals de specificaties van versie 2.0.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-cityjsonspecifications" title="CityJSON Specifications 2.0.1">CityJSONSpecifications</a></cite>]. </p>
+<p>CityGML daarentegen is een uitgebreidere standaard evenveel gedetailleerde semantische informatie biedt over stedelijke objecten. CityGML is een officiële OGC-standaard die ontwikkeld is door het Open Geospatial Consortium zelf. Het formaat is gebaseerd op een UML-model dat een gemeenschappelijke basis biedt voor de uitwisseling en opslag van virtuele 3D-stadsmodellen. CityGML wordt breed ondersteund door zowel commerciële als open-source software en biedt uitgebreide mogelijkheden voor zowel geometrische als semantische modellering van steden. Een groot voordeel van CityGML is dat het compatibel is met een breed scala aan softwarepakketten, van commerciële oplossingen zoals Autodesk en ESRI tot open-source projecten zoals 3DCityDB. Dit maakt CityGML zeer geschikt voor grote, complexe projecten waarin zowel geometrie, semantiek als topologie een belangrijke rol spelen. Meer technische details over de werking van CityGML zijn te vinden in de officiële documentatie van het OGC, zoals beschreven op [<cite><a class="bibref" data-link-type="biblio" href="#bib-citygml3" title="OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0">CityGML3</a></cite>]. </p>
+<section id="wanneer-citygml-en-cityjson-gebruiken"><div class="header-wrapper"><h4 id="x2-1-1-wanneer-citygml-en-cityjson-gebruiken"><bdi class="secno">2.1.1 </bdi>Wanneer CityGML en CityJSON gebruiken?</h4><a class="self-link" href="#wanneer-citygml-en-cityjson-gebruiken" aria-label="Permalink for Section 2.1.1"></a></div>
+<ul>
+<li>Als je werkt aan grote, complexe projecten waarin gedetailleerde semantische informatie en verschillende niveaus van detail essentieel zijn, zoals in stedelijke infrastructuur of grootschalige stadsmodellering, dan is CityGML de aangewezen standaard.</li>
+<li>Als je meer gericht bent op het ontwikkelen van API’s, tools of analyses waarbij eenvoud, compactheid en snelle verwerking belangrijk zijn, dan is CityJSON een betere keuze.</li>
+</ul>
+</section></section><section id="x3d-tiles"><div class="header-wrapper"><h3 id="x2-2-3d-tiles"><bdi class="secno">2.2 </bdi>3D tiles</h3><a class="self-link" href="#x3d-tiles" aria-label="Permalink for Section 2.2"></a></div>
+<p>De 3D Tiles standaard biedt een open manier om grote hoeveelheden 3D-geogegevens zoals gebouwen, point clouds en infrastructuur te streamen en weer te geven. De standaard is ontwikkeld door Cesium, nu onderdeel van Bentley Systems, en is een door OGC goedgekeurde specificatie [<cite><a class="bibref" data-link-type="biblio" href="#bib-ogc3dtiles" title="3D Tiles OGC landing page">OGC3DTiles</a></cite>]. Het maakt gebruik van een hiërarchische structuur, waardoor data snel kan worden ingeladen en aangepast aan de schaal van de applicatie. Dit maakt 3D Tiles bijzonder geschikt voor dynamische visualisaties in omgevingen zoals webapplicaties, waar schaalbaarheid en prestatie cruciaal zijn. In tegenstelling tot andere standaarden is de focus vooral op visualisatie, en minder op geavanceerde semantische analyses. </p>
+<p>Wat 3D Tiles onderscheidt, is de mogelijkheid om dynamische niveaus van detail (Level of Detail, LoD) te ondersteunen. Dit betekent dat objecten afhankelijk van de kijkafstand en prestaties met meer of minder detail worden weergegeven, wat cruciaal is voor efficiënte visualisatie van grote datasets. Deze standaard is met name gericht op visualisatie en minder op diepgaande semantische analyses, waardoor het ideaal is voor toepassingen zoals het weergeven van stedelijke 3D-modellen, puntenwolken en topografische data. Dankzij de hiërarchische structuur van 3D Tiles kunnen datasets efficiënt worden georganiseerd en gestreamd, wat de prestaties verbetert in zowel statische als dynamische weergaveomgevingen. Deze standaard vereist echter specialistische kennis op het gebied van rendering en ruimtelijke gegevensbeheer om optimaal benut te worden. Voor meer informatie, zie de bronnen: [<cite><a class="bibref" data-link-type="biblio" href="#bib-handreiking3dtiling" title="Handreiking 3D Tiling">Handreiking3DTiling</a></cite>] en [<cite><a class="bibref" data-link-type="biblio" href="#bib-3dtiles" title="3D Tiles Specification 1.1">3DTiles</a></cite>]. </p>
+<p>3D Tiles is eén van de open standaarden van het OGC, waar het de status van een "community standard" heeft. Dit bevordert interoperabiliteit tussen verschillende softwareplatformen (zoals CesiumJS, gaming engines en ESRI software), wat zorgt voor bredere adoptie en uitwisseling van 3D-geogegevens. De standaard maakt gebruik van tiling-technieken waarbij grote datasets in kleinere, beheersbare tiles worden opgedeeld om efficiëntere streaming en weergave mogelijk te maken. Een belangrijk voordeel van 3D Tiles is de flexibiliteit om te worden toegepast in diverse contexten, zoals stedelijke planning, infrastructuurbeheer en crisisbeheersing. Dit wordt verder ondersteund door de [<cite><a class="bibref" data-link-type="biblio" href="#bib-ogcapitiles" title="OGC API - Tiles">OGCAPITiles</a></cite>] en de [<cite><a class="bibref" data-link-type="biblio" href="#bib-3dgeovolumes" title="OGC API - 3D GeoVolumes">3DGeoVolumes</a></cite>], die de integratie in verschillende software-ecosystemen mogelijk maakt. Verdere details over de standaard en toepassingen zijn te vinden op de OGC-website. </p>
+<p>3D Tiles ondersteunt geen geprojecteerde coördinaatsystemen. 3Dtiles wordt altijd gedefinieerd in WGS 1984 en een ellipsoïdaal verticaal coördinatensysteem (EPSG 4978). Dit is belangrijk om te beseffen als je 3D tiles wil combineren met bestaande geografische informatie in EPSG 28992 (RD New).</p>
+<section id="wanneer-3d-tiles-gebruiken"><div class="header-wrapper"><h4 id="x2-2-1-wanneer-3d-tiles-gebruiken"><bdi class="secno">2.2.1 </bdi>Wanneer 3D tiles gebruiken?</h4><a class="self-link" href="#wanneer-3d-tiles-gebruiken" aria-label="Permalink for Section 2.2.1"></a></div>
+<ul>
+<li>Als je werkt aan toepassingen waarbij efficiënte visualisatie en streaming van grote 3D datasets cruciaal zijn is 3D Tiles een uitstekende keuze. </li>
+<li>Je wil de data op verschillende (web)softwareplatforms kunnen gebruiken.</li>
+<li>Als je werkt in een globale context en geografische projectie (zoals WGS1984).</li>
+</ul>
+</section></section><section id="indexed-3d-scene-layer-i3s"><div class="header-wrapper"><h3 id="x2-3-indexed-3d-scene-layer-i3s"><bdi class="secno">2.3 </bdi>Indexed 3D Scene Layer (I3S)</h3><a class="self-link" href="#indexed-3d-scene-layer-i3s" aria-label="Permalink for Section 2.3"></a></div>
+<p>De Indexed 3D Scene Layer (I3S) standaard is specifiek gericht op het efficiënt beheren, analyseren en visualiseren van grote hoeveelheden 3D-geo-informatie. Deze standaard is ontwikkeld door Esri en is een landing page over I3S bij OGC [<cite><a class="bibref" data-link-type="biblio" href="#bib-i3slandingpageogc" title="I3S landing page OGC">I3SlandingpageOGC</a></cite>]. Deze standaard is ontworpen voor het streamen van 3D-data zoals gebouwen, terreinmodellen, mesh en puntwolken, en wordt veelal toegepast in GIS-toepassingen zoals Esri's ArcGIS-platform en in Cesium [<cite><a class="bibref" data-link-type="biblio" href="#bib-i3scesiumjs" title="I3S in CesiumJS">I3SCesiumJS</a></cite>]. In tegenstelling tot 3D Tiles van Cesium, dat primair is gericht op visualisatie, biedt I3S ondersteuning voor zowel visualisatie als GIS-analyse, wat het bijzonder geschikt maakt voor gedetailleerde ruimtelijke analyses.  </p>
+<p>I3S maakt gebruik van een hiërarchische, op knooppunten gebaseerde ruimtelijke indexstructuur, waarin elke knoop (node) gegevens bevat zoals geometrie, texturen en attributen. Deze structuur zorgt voor een efficiënte organisatie van 3D-data. Het doel van deze index is om snelle toegang te bieden tot relevante gegevensblokken, zie hoofdstuk 8 van [<cite><a class="bibref" data-link-type="biblio" href="#bib-i3s" title="OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.3">I3S</a></cite>]. Het systeem ondersteunt dynamische niveaus van detail (LoD), zodat objecten afhankelijk van de kijkafstand en de rekenkracht van het apparaat met meer of minder detail worden weergegeven. Dit maakt het mogelijk om 3D-modellen efficiënt te streamen en te visualiseren zonder prestatiedalingen, vooral binnen GIS-omgevingen. Daarnaast is I3S niet alleen geschikt voor statische visualisaties, maar ook voor analytische toepassingen, waardoor het een veelzijdige keuze is voor gebruikers die zowel ruimtelijke analyses als visualisatie van 3D-modellen willen uitvoeren. </p>
+<p>Hoewel I3S als open standaard door de OGC is aangenomen, is het grotendeels beheerd door Esri. De I3S-standaard is ideaal voor gebruikers binnen het Esri-ecosysteem, voor verdere specificaties kun je kijken in de I3S Specificatie [<cite><a class="bibref" data-link-type="biblio" href="#bib-i3sspecification" title="Scene Layers: Service and Package Standard">I3Sspecification</a></cite>]. </p>
+<section id="wanneer-i3s-gebruiken"><div class="header-wrapper"><h4 id="x2-3-1-wanneer-i3s-gebruiken"><bdi class="secno">2.3.1 </bdi>Wanneer I3S gebruiken?</h4><a class="self-link" href="#wanneer-i3s-gebruiken" aria-label="Permalink for Section 2.3.1"></a></div>
+<ul>
+<li>Snelle data-invoer van zowel feature layers, mesh layers en point cloud layers. </li>
+<li>Je wil 3D-geo-informatie zowel visualiseren als analyseren binnen (ESRI) GIS platformen.</li>
+<li>Je wilt 3D-data aanbieden of gebruiken in een globale en lokale context met een geografisch of geprojecteerd coördinatensysteem (zoals EPSG 28992 (RD New)).</li>
+</ul>
+</section></section><section id="industry-foundation-class-ifc"><div class="header-wrapper"><h3 id="x2-4-industry-foundation-class-ifc"><bdi class="secno">2.4 </bdi>Industry Foundation Class (IFC)</h3><a class="self-link" href="#industry-foundation-class-ifc" aria-label="Permalink for Section 2.4"></a></div>
+<p>De Industry Foundation Classes (IFC) standaard, ontwikkeld door [<cite><a class="bibref" data-link-type="biblio" href="#bib-buildingsmart" title="buildingSMART">buildingSMART</a></cite>], is een open dataformaat dat voornamelijk wordt gebruikt binnen Building Information Modelling (BIM) voor het uitwisselen van bouwinformatie en -modellen. Deze standaard is ook internationaal erkend als [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso16739" title="ISO 16739">ISO16739</a></cite>], wat de brede acceptatie en het belang binnen de bouwindustrie onderstreept. De IFC-standaard wordt vanuit de BIM-wereld steeds vaker uitgewisseld naar de GIS-wereld. De IFC-standaard kan worden geconverteerd naar verschillende GIS standaarden met behoud van gedetailleerde 3D-modellen, wat essentieel is voor geïntegreerde stadsplanning, infrastructuurbeheer en ruimtelijke analyses. Deze brug tussen BIM en GIS maakt het eenvoudiger om bouw- en infrastructuurgegevens in een bredere geo context te plaatsen, waardoor betere beslissingen en analyses mogelijk zijn. </p>
+<p>De IFC standaard is ontworpen om uitwisseling en samenwerking te bevorderen tussen verschillende softwareplatforms die worden gebruikt in de bouwsector. De IFC-standaard maakt het mogelijk om verschillende soorten bouwinformatie vast te leggen en uit te wisselen, waaronder 3D-modellen van bouwwerken, technische details en zelfs bouwplanningen. Technisch gezien omvat IFC een breed scala aan gegevensstructuren en representatiemodellen. De huidige versie (IFC4.3) bevat meer dan 700 entiteiten en ondersteunt verschillende geometrische representaties zoals sweep volumes, booleaanse CSG-modellen, en B-rep-modellen (Boundary representation). Deze worden vaak gebruikt om complexe 3D-objecten in bouwprojecten te beschrijven. In GIS-applicaties wordt veelal B-rep ondersteund. Voor de uitwisseling is het van belang dat de IFC standaard gestuurd wordt dat de informatie in een bruikbare geometrische representatie geexporteerd wordt. Veelgebruikte geometrieën in IFC worden gegenereerd via 'primitive instancing', waarbij objecten worden gedefinieerd op basis van parameters zoals vormen en profielen. Dit maakt IFC flexibel en geschikt voor complexe bouwprojecten, van kleine gebouwen tot grootschalige infrastructuren. Meer informatie kun je lezen in de documentatie van [<cite><a class="bibref" data-link-type="biblio" href="#bib-ifc4.3" title="IFC4.3">IFC4.3</a></cite>]. </p>
+<p>Qua gebruiksvoorwaarden en specificaties is IFC een open standaard, wat betekent dat de specificaties vrij beschikbaar zijn voor gebruik en implementatie. Dit bevordert interoperabiliteit tussen verschillende softwarepakketten binnen de bouwsector. Maar IFC wordt voornamelijk gebruikt voor statische datasets, wat betekent dat het minder geschikt is voor dynamische of tijdsgevoelige gegevens. De bestanden kunnen worden opgeslagen in verschillende formaten, zoals XML, JSON EN STEP. Ondanks de openheid, is de IFC standaard vrij complex en vereist specialistische kennis voor volledige implementatie. De [<cite><a class="bibref" data-link-type="biblio" href="#bib-geobimbenchmark" title="GeoBIM benchmark">GeoBIMbenchmark</a></cite>] heeft informatie gepubliceerd over de intergratie van de GIS en BIM, waaronder het gebruik van de IFC standaard in GIS software. </p>
+<section id="wanneer-ifc-gebruiken"><div class="header-wrapper"><h4 id="x2-4-1-wanneer-ifc-gebruiken"><bdi class="secno">2.4.1 </bdi>Wanneer IFC gebruiken?</h4><a class="self-link" href="#wanneer-ifc-gebruiken" aria-label="Permalink for Section 2.4.1"></a></div>
+<ul>
+<li>Bij complexe bouwprojecten waarbij gedetailleerde bouwinformatie en 3D-modellen van belang is, zoals in architectuur, engineering en bouw (AEC);</li>
+<li>Wanneer de BIM-informatie open aangeboden wordt en uit wil wisselen, zodat het gecombineerd kan worden met andere BIM-modellen of met Geo-modellen.</li>
+</ul>
+</section></section><section id="laz"><div class="header-wrapper"><h3 id="x2-5-laz"><bdi class="secno">2.5 </bdi>LAZ</h3><a class="self-link" href="#laz" aria-label="Permalink for Section 2.5"></a></div>
+<p>Het LAZ-formaat is een gecomprimeerde versie van het LAS-formaat (LIDAR Aerial Survey), ontworpen in 2007 om efficiënt grote hoeveelheden 3D puntenwolkdata op te slaan en uit te wisselen. LAS is een OGC community standaard [<cite><a class="bibref" data-link-type="biblio" href="#bib-las" title="LAS Specification">LAS</a></cite>] in de geospatiale wereld voor het beheren van LiDAR-gegevens, waarin naast de geometrie, ook attributen zoals intensiteit, classificatie en kleurinformatie worden opgeslagen. Hoewel LAS-bestanden bijzonder nuttig zijn, hebben ze vaak een grote bestandsgrootte. Het LAZ-formaat biedt hiervoor een oplossing door middel van verliesloze compressie, die de bestandsgrootte tot wel 10 à 15% van de originele LAS-bestanden kan terugbrengen. Hierdoor kunnen grote datasets sneller en efficiënter worden opgeslagen en gedeeld, zonder dat dit ten koste gaat van de gegevenskwaliteit. </p>
+<p>Technisch gezien heeft het LAZ-formaat dezelfde binaire structuur als het LAS-formaat [<cite><a class="bibref" data-link-type="biblio" href="#bib-lasspecification1.4" title="LAS Specification 1.4">LASSpecification1.4</a></cite>], waarbij data compact wordt opgeslagen voor efficiënte verwerking. Het binaire formaat van LAS biedt hoge prestaties voor het lezen en schrijven van XYZ-hoogtedata en specifieke metadata van een LiDAR-missie, zoals GNNS-tijd, intensiteit, het aantal echo's en returnnummers. Dit maakt gestandaardiseerde uitwisseling van data mogelijk zonder dat er extra metadatabestanden nodig zijn. De compressie in LAZ wordt gerealiseerd door efficiënte algoritmen, zoals entropiecodering en codering met variabele lengte, die de gegevens compact opslaan zonder kwaliteitsverlies. </p>
+<p>Gebruikerservaringen op [<cite><a class="bibref" data-link-type="biblio" href="#bib-geoforum" title="Geoforum">Geoforum</a></cite>] wijzen erop dat het LAZ-formaat breed geaccepteerd is binnen de geospatiale gemeenschap, mede door de interoperabiliteit met diverse softwaretools en het open-source karakter van de standaard. Veel GIS- en LiDAR-verwerkingssoftware ondersteunen zowel LAS- als LAZ-bestanden, wat betekent dat gebruikers niet beperkt zijn tot één specifieke tool voor het verwerken van deze data. Omdat de bestanden kleiner zijn, worden ze sneller geladen, wat vooral voordelen biedt bij het werken met grote datasets of wanneer snelle toegang tot de gegevens vereist is. In de inventarisatie puntenwolken in Nederland [<cite><a class="bibref" data-link-type="biblio" href="#bib-wp1" title="WP1: Inventarisatie van puntenwolken in Nederland">WP1</a></cite>] wordt veelal de gecomprimeerde LAS standaard gebruikt.  </p>
+<section id="wanneer-laz-gebruiken"><div class="header-wrapper"><h4 id="x2-5-1-wanneer-laz-gebruiken"><bdi class="secno">2.5.1 </bdi>Wanneer LAZ gebruiken?</h4><a class="self-link" href="#wanneer-laz-gebruiken" aria-label="Permalink for Section 2.5.1"></a></div>
+<ul>
+<li>Als de gegevensnauwkeurigheid van grote puntenwolkenbestanden belangrijk is;</li>
+<li>Als de puntenwolken bestanden zodanig groot zijn, dat compressie belangrijk is;</li>
+<li>Wanneer je de data van puntenwolken wil analyseren;</li>
+<li>Wanneer open source de maatstaaf is.</li>
+</ul>
+</section></section></section>
+  <section id="x3d-geovolumes-api"><div class="header-wrapper"><h2 id="x3-3d-geovolumes-api"><bdi class="secno">3. </bdi>3D GeoVolumes API</h2><a class="self-link" href="#x3d-geovolumes-api" aria-label="Permalink for Section 3."></a></div>
+<p> Zoals in het vorige hoofdstuk beschreven, bestaan er verschillende standaarden voor 3D geodata. Sommigen beschrijven alleen een bestandsformaat, anderen zowel het bestandsformaat als de manier waarop de data toegankelijk wordt gemaakt. De OGC 3D GeoVolumes API [<cite><a class="bibref" data-link-type="biblio" href="#bib-3dgeovolumes" title="OGC API - 3D GeoVolumes">3DGeoVolumes</a></cite>] specificeert zelf geen specifiek formaat voor 3D geodata, maar beschrijft alleen hoe je 3D geodata aan kan bieden in verschillende formaten, waarbij de gebruiker het formaat kan kiezen en data kan selecteren. </p>
+<blockquote>
+<p>OGC API - 3D GeoVolumes facilitates efficient discovery of and access to 3D content in multiple formats based on a space-centric perspective.</p>
+</blockquote>
+<p>Een API is een <em>Application Programmimg Interface</em> - een manier waarop twee computers, een server en een client, met elkaar communiceren. De server is in dit geval de computer die 3D geodata aanbiedt, de client is de computer die data vraagt. </p>
+<p>Het Open Geospatial Consortium (<a href="https://www.ogc.org/">OGC</a>) heeft een <a href="https://ogcapi.ogc.org/">hele reeks APIs</a> gestandaardiseerd. Het vormen bouwstenen waarmee je geodata op een standaardmanier kan serveren. Denk bijvoorbeeld aan het bekijken van geodata in een web viewer, het bladeren door collecties van geodata, het opvragen van een geo-object op basis van het id, of het opvragen van geo-objecten binnen een bounding box of tijdsperiode. </p>
+<p>De 3D GeoVolumes API [<cite><a class="bibref" data-link-type="biblio" href="#bib-3dgeovolumes" title="OGC API - 3D GeoVolumes">3DGeoVolumes</a></cite>] standaard bevat specifieke bouwstenen voor 3D geodata. Centraal in deze standaard staat het idee van Bounding Volumes (ook een centraal begip in 3D Tiles en soms aangeduid als 3D Containers). Dit zijn 3-dimensionale bounding boxes waarbinnen zich ofwel andere bounding boxes, ofwel 3D geo-objecten kunnen bevinden. De Bounding Volumes kunnen verschillende vormen hebben. Elke Bounding Volume vormt een collectie die de gebruiker kan opvragen. </p>
+<p>Een client kan bij een GeoVolumes API een specifiek GeoVolume opvragen op basis van id. Ook kan een client geo-objecten binnen een zelf gespecificeerde 3D bounding box opvragen, al dan niet binnen een specifiek Geo-Volume. </p>
+<p>In de standaard worden 3D Tiles [<cite><a class="bibref" data-link-type="biblio" href="#bib-3dtiles" title="3D Tiles Specification 1.1">3DTiles</a></cite>] en i3s [<cite><a class="bibref" data-link-type="biblio" href="#bib-i3s" title="OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.3">I3S</a></cite>] specifiek genoemd als ondersteunde formaten, maar het is ook toegestaan om andere formaten te serveren, bijvoorbeeld CityGML [<cite><a class="bibref" data-link-type="biblio" href="#bib-citygml3-part2" title="OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard">CityGML3-part2</a></cite>], CityJSON [<cite><a class="bibref" data-link-type="biblio" href="#bib-cityjson" title="CityJSON Community Standard 2.0">CityJSON</a></cite>] of glTF [<cite><a class="bibref" data-link-type="biblio" href="#bib-gltf" title="glTF 2.0 Specification">glTF</a></cite>]. </p>
+<section id="wanneer-3d-geovolumes-gebruiken"><div class="header-wrapper"><h3 id="x3-1-wanneer-3d-geovolumes-gebruiken"><bdi class="secno">3.1 </bdi>Wanneer 3D GeoVolumes gebruiken?</h3><a class="self-link" href="#wanneer-3d-geovolumes-gebruiken" aria-label="Permalink for Section 3.1"></a></div>
+<ul>
+<li>Als je 3D geodata in meerdere formaten wilt aanbieden via een uniforme interface;</li>
+<li>Als je selectie met een 3D bounding box wilt mogelijk maken.</li>
+</ul>
+</section></section>
+
+  
+  
+  
+
+  
+  
+  
+  
+
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="a-referenties"><bdi class="secno">A. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix A."></a></div><section id="informatieve-referenties">
+    <div class="header-wrapper"><h3 id="a-1-informatieve-referenties"><bdi class="secno">A.1 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix A.1"></a></div>
+    <dl class="bibliography"><dt id="bib-3dgeovolumes">[3DGeoVolumes]</dt><dd>
+      <a href="https://docs.ogc.org/DRAFTS/22-029.html"><cite>OGC API - 3D GeoVolumes</cite></a>.  Open Geospatial Consortium. 2022. Draft. URL: <a href="https://docs.ogc.org/DRAFTS/22-029.html">https://docs.ogc.org/DRAFTS/22-029.html</a>
+    </dd><dt id="bib-3dtiles">[3DTiles]</dt><dd>
+      <a href="https://docs.ogc.org/cs/22-025r4/22-025r4.html"><cite>3D Tiles Specification 1.1</cite></a>.  Open Geospatial Consortium (OGC). 2023-01-12. Approved. URL: <a href="https://docs.ogc.org/cs/22-025r4/22-025r4.html">https://docs.ogc.org/cs/22-025r4/22-025r4.html</a>
+    </dd><dt id="bib-buildingsmart">[buildingSMART]</dt><dd>
+      <a href="https://technical.buildingsmart.org/standards/ifc"><cite>buildingSMART</cite></a>.  buildingSMART. 2024. Approved. URL: <a href="https://technical.buildingsmart.org/standards/ifc">https://technical.buildingsmart.org/standards/ifc</a>
+    </dd><dt id="bib-citygml3">[CityGML3]</dt><dd>
+      <a href="https://docs.ogc.org/is/20-010/20-010.html"><cite>OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0</cite></a>.  Open Geospatial Consortium. 2021-09-13. Approved. URL: <a href="https://docs.ogc.org/is/20-010/20-010.html">https://docs.ogc.org/is/20-010/20-010.html</a>
+    </dd><dt id="bib-citygml3-part2">[CityGML3-part2]</dt><dd>
+      <a href="https://docs.ogc.org/is/21-006r2/21-006r2.html"><cite>OGC City Geography Markup Language (CityGML) Part 2: GML Encoding Standard</cite></a>.  Open Geospatial Consortium. 2023-06-20. Approved. URL: <a href="https://docs.ogc.org/is/21-006r2/21-006r2.html">https://docs.ogc.org/is/21-006r2/21-006r2.html</a>
+    </dd><dt id="bib-cityjson">[CityJSON]</dt><dd>
+      <a href="https://docs.ogc.org/cs/20-072r5/20-072r5.html"><cite>CityJSON Community Standard 2.0</cite></a>.  Open Geospatial Consortium. 2023-10-20. Approved. URL: <a href="https://docs.ogc.org/cs/20-072r5/20-072r5.html">https://docs.ogc.org/cs/20-072r5/20-072r5.html</a>
+    </dd><dt id="bib-cityjsonimplementation">[CityJSONImplementation]</dt><dd>
+      <a href="https://www.cityjson.org/citygml/v30/#specific-citygml-v30-features-not-supported"><cite>CityJSON: CityGML v3.0 implementation details</cite></a>.  Open Geospatial Consortium. 2024. Approved. URL: <a href="https://www.cityjson.org/citygml/v30/#specific-citygml-v30-features-not-supported">https://www.cityjson.org/citygml/v30/#specific-citygml-v30-features-not-supported</a>
+    </dd><dt id="bib-cityjsonspecifications">[CityJSONSpecifications]</dt><dd>
+      <a href="https://www.cityjson.org/specs/2.0.1/"><cite>CityJSON Specifications 2.0.1</cite></a>.  Open Geospatial Consortium. 2024-04-11. Approved. URL: <a href="https://www.cityjson.org/specs/2.0.1/">https://www.cityjson.org/specs/2.0.1/</a>
+    </dd><dt id="bib-geobimbenchmark">[GeoBIMbenchmark]</dt><dd>
+      <a href="https://3d.bk.tudelft.nl/projects/geobim-benchmark/task1.html"><cite>GeoBIM benchmark</cite></a>.  ISPRS, EuroSDR, Tu Delft 3Dgeoinfo, Lund University, National University of Singapore, National Technical University of Athens. 2019. Approved. URL: <a href="https://3d.bk.tudelft.nl/projects/geobim-benchmark/task1.html">https://3d.bk.tudelft.nl/projects/geobim-benchmark/task1.html</a>
+    </dd><dt id="bib-geoforum">[Geoforum]</dt><dd>
+      <a href="https://geoforum.nl/"><cite>Geoforum</cite></a>. URL: <a href="https://geoforum.nl/">https://geoforum.nl/</a>
+    </dd><dt id="bib-gltf">[glTF]</dt><dd>
+      <a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html"><cite>glTF 2.0 Specification</cite></a>.  Khronos Group. 2021-10-11. Published. URL: <a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html">https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html</a>
+    </dd><dt id="bib-handreiking3dtiling">[Handreiking3DTiling]</dt><dd>
+      <a href="https://geonovum.github.io/3d-tiling/"><cite>Handreiking 3D Tiling</cite></a>.  Geonovum. 2024-07-05. Workversion. URL: <a href="https://geonovum.github.io/3d-tiling/">https://geonovum.github.io/3d-tiling/</a>
+    </dd><dt id="bib-i3s">[I3S]</dt><dd>
+      <a href="https://docs.ogc.org/cs/17-014r9/17-014r9.html"><cite>OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.3</cite></a>.  Open Geospatial Consortium (OGC). 2023-01-11. Approved. URL: <a href="https://docs.ogc.org/cs/17-014r9/17-014r9.html">https://docs.ogc.org/cs/17-014r9/17-014r9.html</a>
+    </dd><dt id="bib-i3scesiumjs">[I3SCesiumJS]</dt><dd>
+      <a href="https://www.esri.com/arcgis-blog/products/developers/3d-gis/ogc-i3s-cesiumjs/?srsltid=AfmBOoodzV1B6R25DaY9BTw5PdcnTQxqHZOJ8m58JvT2MTL7L4TbuBwI/"><cite>I3S in CesiumJS</cite></a>.  ESRI. 2022-11-08. Approved. URL: <a href="https://www.esri.com/arcgis-blog/products/developers/3d-gis/ogc-i3s-cesiumjs/?srsltid=AfmBOoodzV1B6R25DaY9BTw5PdcnTQxqHZOJ8m58JvT2MTL7L4TbuBwI/">https://www.esri.com/arcgis-blog/products/developers/3d-gis/ogc-i3s-cesiumjs/?srsltid=AfmBOoodzV1B6R25DaY9BTw5PdcnTQxqHZOJ8m58JvT2MTL7L4TbuBwI/</a>
+    </dd><dt id="bib-i3slandingpageogc">[I3SlandingpageOGC]</dt><dd>
+      <a href="https://www.ogc.org/publications/standard/i3s/"><cite>I3S landing page OGC</cite></a>.  Open Geospatial Consortium (OGC). 2024. Approved. URL: <a href="https://www.ogc.org/publications/standard/i3s/">https://www.ogc.org/publications/standard/i3s/</a>
+    </dd><dt id="bib-i3sspecification">[I3Sspecification]</dt><dd>
+      <a href="https://github.com/Esri/i3s-spec"><cite>Scene Layers: Service and Package Standard</cite></a>.  ESRI. 2023. Approved. URL: <a href="https://github.com/Esri/i3s-spec">https://github.com/Esri/i3s-spec</a>
+    </dd><dt id="bib-ifc4.3">[IFC4.3]</dt><dd>
+      <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/index.html"><cite>IFC4.3</cite></a>.  buildingSMART. 2024. Approved. URL: <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/index.html">https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/index.html</a>
+    </dd><dt id="bib-iso16739">[ISO16739]</dt><dd>
+      <a href="https://www.iso.org/standard/84123.html"><cite>ISO 16739</cite></a>.  ISO. 2024-03. Approved. URL: <a href="https://www.iso.org/standard/84123.html">https://www.iso.org/standard/84123.html</a>
+    </dd><dt id="bib-las">[LAS]</dt><dd>
+      <a href="https://www.ogc.org/publications/standard/las/"><cite>LAS Specification</cite></a>.  Open Geospatial Consortium. 2017. Published. URL: <a href="https://www.ogc.org/publications/standard/las/">https://www.ogc.org/publications/standard/las/</a>
+    </dd><dt id="bib-lasspecification1.4">[LASSpecification1.4]</dt><dd>
+      <a href="https://portal.ogc.org/files/?artifact_id=74523"><cite>LAS Specification 1.4</cite></a>.  Open Geospatial Consortium. 2013-07-15. Approved. URL: <a href="https://portal.ogc.org/files/?artifact_id=74523">https://portal.ogc.org/files/?artifact_id=74523</a>
+    </dd><dt id="bib-ogc3dtiles">[OGC3DTiles]</dt><dd>
+      <a href="https://www.ogc.org/publications/standard/3dtiles/"><cite>3D Tiles OGC landing page</cite></a>.  Open Geospatial Consortium (OGC). 2024. Approved. URL: <a href="https://www.ogc.org/publications/standard/3dtiles/">https://www.ogc.org/publications/standard/3dtiles/</a>
+    </dd><dt id="bib-ogcapitiles">[OGCAPITiles]</dt><dd>
+      <a href="https://docs.ogc.org/is/20-057/20-057.html"><cite>OGC API - Tiles</cite></a>.  Open Geospatial Consortium (OGC). 2022-11-10. Approved. URL: <a href="https://docs.ogc.org/is/20-057/20-057.html">https://docs.ogc.org/is/20-057/20-057.html</a>
+    </dd><dt id="bib-wp1">[WP1]</dt><dd>
+      <a href="nog niet beschikbaar"><cite>WP1: Inventarisatie van puntenwolken in Nederland</cite></a>.  Rijkswaterstaat, Het Waterschapshuis, Kadaster &amp; TU Delft. 2024. In review. URL: <a href="nog niet beschikbaar">nog niet beschikbaar</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><div class="sidelabel">Geonovum Handreiking - Consultatieversie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
