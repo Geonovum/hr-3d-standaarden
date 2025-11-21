@@ -39,8 +39,8 @@ let respecConfig = {
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  previousPublishDate: "2024-11-06",
-  previousMaturity: "cv",
+  previousPublishDate: "2025-01-28",
+  previousMaturity: "def",
   //-- TODO: de namen van de Editor(s) / Redacteur(en)---------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors:
@@ -126,7 +126,7 @@ let respecConfig = {
         publisher:  "ESRI",
         date:       "2023",
     }, 
-    "I3SlandingpageOGC":
+    "I3SOGC":
       {
         title:      "I3S landing page OGC",
         href:       "https://www.ogc.org/publications/standard/i3s/",
