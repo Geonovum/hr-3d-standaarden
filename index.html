@@ -7,9 +7,16 @@
   <script src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js" class="remove"></script>
   <script src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js" class="remove"></script>
   <script src="js/config.js" class="remove"></script>
-  <script class="remove"> respecConfig = {...organisationConfig, ...respecConfig}</script>
-  <script>document.title = respecConfig.title</script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico" />
+  <!-- TODO: Vul in config.js de titel in -->
+  <script class="remove">
+    const mergedLocalBiblio = {...organisationConfig.localBiblio, ...respecConfig.localBiblio};
+    const mergedPostProcess = [...(organisationConfig.postProcess ?? []),...(respecConfig.postProcess ?? [])];
+    respecConfig = {...organisationConfig, ...respecConfig, 
+      postProcess: mergedPostProcess, 
+      localBiblio: mergedLocalBiblio};
+    document.title = respecConfig.title;
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://docs.geostandaarden.nl/media/Geonovum.ico"/>
   <script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
   <!-- De volgende regel zorgt ervoor dat plaatjes uit Imvertor niet geschaald
        worden, zodat de imagemap die op deze plaatjes zit werkt. -->
